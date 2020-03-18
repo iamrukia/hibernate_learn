@@ -39,7 +39,7 @@ public class EventTest {
         // now lets pull events from the database and list them
         session = sessionFactory.openSession();
         session.beginTransaction();
-        List result = session.createQuery("from Event").list();
+        List result = session.createQuery("from Good").list();
         for (Event event : (List<Event>) result) {
             System.out.println("Event (" + event.getTitle());
         }
